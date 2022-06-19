@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 import utils.PageBase;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources", glue = "src/test/java/steps")
+@CucumberOptions(features = "src/test/resources", glue = "steps")
 public class PesquisaTeste {
 	
 	public static WebDriver driver;

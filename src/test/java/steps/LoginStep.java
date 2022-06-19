@@ -10,6 +10,5 @@ public class LoginStep {
 	@Dado("que esteja logado")
 	public void dado_que_esteja_logado() {
 		login.fazerLogin();
-		System.out.println("Entrou no step");
 	}
 }
