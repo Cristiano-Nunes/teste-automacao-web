@@ -21,11 +21,13 @@ public class PesquisaTeste {
 		
 	@BeforeClass
 	public static void before() {
-		System.setProperty("webdriver.chrome.driver", "C:/CNO/BRQ/Driver/chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "C:/CNO/BRQ/Driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://phptravels.net/admin");
+		driver.manage().window().maximize();
 		PageBase.driver = driver;
 	}
 	
